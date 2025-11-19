@@ -14,15 +14,10 @@
     "jsx": "react-jsx",
     "incremental": true,
 
-    // Ensures alias works from the project root
-    "baseUrl": ".", 
+    "baseUrl": ".",
 
-    // 🔥 FIXED ALIASES
     "paths": {
-      "@/*": ["./*"],
-
-      // 👇 The important fix:
-      "@/db/*": ["./app/db/*"]
+      "@/*": ["./*"]
     },
 
     "plugins": [
@@ -31,7 +26,6 @@
       }
     ]
   },
-
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -40,7 +34,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-
   "exclude": ["node_modules"]
 }
-
