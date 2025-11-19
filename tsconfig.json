@@ -13,20 +13,25 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "incremental": true,
+
+    // Ensures alias works from the project root
+    "baseUrl": ".", 
+
+    // 🔥 FIXED ALIASES
+    "paths": {
+      "@/*": ["./*"],
+
+      // 👇 The important fix:
+      "@/db/*": ["./app/db/*"]
+    },
+
     "plugins": [
       {
         "name": "next"
       }
-    ],
-
-    // ✅ ADD THIS
-    "baseUrl": ".",
-
-    // (Already correct)
-    "paths": {
-      "@/*": ["./*"]
-    }
+    ]
   },
+
   "include": [
     "next-env.d.ts",
     "**/*.ts",
@@ -35,5 +40,7 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
+
   "exclude": ["node_modules"]
 }
+
