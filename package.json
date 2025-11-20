@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "migrate": "drizzle-kit migrate"   
   },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",
@@ -27,3 +28,4 @@
     "typescript": "^5"
   }
 }
+
