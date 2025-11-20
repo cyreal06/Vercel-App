@@ -1,7 +1,7 @@
+export const dynamic = "force-dynamic";
+
 import { db } from "@/db";
 import { users } from "@/db/schema";
-
-export const dynamic = "force-dynamic";
 
 export default async function UsersPage() {
   const result = await db.select().from(users);
@@ -31,4 +31,5 @@ export default async function UsersPage() {
     </div>
   );
 }
+
 
