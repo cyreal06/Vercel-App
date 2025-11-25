@@ -7,14 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "migrate": "drizzle-kit migrate"   
+    "migrate": "drizzle-kit migrate"
   },
   "dependencies": {
     "@vercel/postgres": "^0.10.0",
     "drizzle-orm": "^0.44.7",
     "next": "16.0.3",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "pg": "^8.11.3",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -25,7 +27,9 @@
     "eslint": "^9",
     "eslint-config-next": "16.0.3",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@types/dotenv": "^8.2.0"
   }
 }
+
 
